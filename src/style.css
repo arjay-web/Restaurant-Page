@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+}
+
+/* HOME PAGE WRAPPER */
+.home-page {
+    display: flex;
+    flex-direction: column;
+}
+
+/* HERO */
+.hero {
+    height: 60vh;
+    background-image: url("./assets/img/hero.jpg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+/* overlay (optional but recommended) */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+}
+
+.hero-content p {
+    max-width: 66ch;
+    margin: 0 auto;
+}
+
+/* BELOW HERO */
+.home-page-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+}
+
+/* CARDS */
+.home-card {
+    border: 2px solid burlywood;
+    border-radius: 10px;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+}
