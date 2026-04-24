@@ -22,7 +22,7 @@ body {
     position: relative;
 }
 
-/* overlay (optional but recommended) */
+
 .hero::before {
     content: "";
     position: absolute;
@@ -52,9 +52,57 @@ body {
 
 /* CARDS */
 .home-card {
-    border: 2px solid burlywood;
+    background-color: #f8f5f2;
     border-radius: 10px;
     padding: 20px;
     width: 220px;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+/* MENU */
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.menu-header p {
+    inline-size: 66ch;
+
+}
+
+.menu-category {
+    padding: 25px 50px;
+}
+
+.menu-items {
+    display: flex; 
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-card {
+    background-color: #f8f5f2;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    max-height: 300px;
+    min-width: 420px;
+}
+
+.menu-card img {
+    height: 200px;
+    width: 420px;
 }
