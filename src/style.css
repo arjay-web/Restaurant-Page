@@ -1,11 +1,55 @@
+.header {
+    background-color: var(--clr-dark);
+    margin: 0;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header h2 {
+    margin: 0;
+    color: var(--clr-card);
+}
+.header nav {
+    display: flex;
+    gap: 15px;
+}
+
+.header nav button {
+    height: 30px;
+    width: 60px;
+    border: none;
+    background-color: var(--clr-dark);
+    color: var(--clr-card);
+}
+
+.header nav button:hover {
+    border: 2px solid var(--clr-accent);
+    border-radius: 5px;
+    color: var(--clr-accent);
+}
+
 body {
     margin: 0;
+}
+
+:root {
+    --clr-bg: #fdf6f0;
+    --clr-dark: #1a1a1a; 
+    --clr-text: #333;
+    --clr-accent: #d4af37;
+    --clr-card: #f8f5f2;
+    
 }
 
 /* HOME PAGE WRAPPER */
 .home-page {
     display: flex;
     flex-direction: column;
+    background-color: var(--clr-bg);
 }
 
 /* HERO */
@@ -34,7 +78,7 @@ body {
     position: relative;
     z-index: 1;
     text-align: center;
-    color: white;
+    color: var(--clr-card);
 }
 
 .hero-content p {
@@ -48,16 +92,21 @@ body {
     justify-content: center;
     gap: 20px;
     padding: 50px;
+    height: 25vh;
+    background-color: var(--clr-b);
 }
 
 /* CARDS */
 .home-card {
-    background-color: #f8f5f2;
+    background-color: var(--clr-card);
     border-radius: 10px;
     padding: 20px;
     width: 220px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -105,4 +154,60 @@ body {
 .menu-card img {
     height: 200px;
     width: 420px;
+}
+
+/* ABOUT */
+
+.about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--clr-bg);
+}
+
+.about-header {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 40vh;
+}
+
+.about-header h1 {
+    color: brown;
+}
+
+.about-header hr {
+    border: 1px solid var(--clr-accent);
+    width: 70px;
+    border-radius: 2px;
+}
+
+.about-header p {
+    color: var(--clr-text);
+    inline-size: 66ch;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 75vh;
+    background-color: var(--clr-dark);
+}
+
+.about-content h2 {
+    color: var(--clr-accent);
+}
+
+.contact-container h4{
+    color: var(--clr-accent);
+    margin: 0;
+}
+
+.contact-container p {
+    color: var(--clr-card);
+    margin: 5px 0 20px 0;
 }

@@ -1,11 +1,8 @@
 import "./style.css"
 
 import loadMenu from "./menu.js"
-
 import loadHome from "./home.js"
-
-
-loadHome()
+import loadAbout from "./about.js";
 
 const buttons = document.querySelectorAll('nav button');
 buttons.forEach(btn =>{
@@ -17,5 +14,6 @@ buttons.forEach(btn =>{
 
         if(page === 'home') loadHome();
         if(page === 'menu') loadMenu();
+        if(page === 'about') loadAbout();
     })
 })
