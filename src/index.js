@@ -17,3 +17,5 @@ buttons.forEach(btn =>{
         if(page === 'about') loadAbout();
     })
 })
+
+loadHome();
